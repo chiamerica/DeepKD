@@ -3,8 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 from typing import Any, Callable, List, Optional, Type, Union
 from collections import OrderedDict 
-# from timm.layers.eca import CecaModule
-import math 
+
 
 class SE(nn.Module):
     def __init__(self, in_channels, rd_ratio=4, rd_dim=None):
